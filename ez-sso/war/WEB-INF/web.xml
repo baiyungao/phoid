@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>greetServlet</servlet-name>
+    <servlet-class>com.wgt.ezsso.server.GreetingServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>accountServlet</servlet-name>
+    <servlet-class>com.wgt.ezsso.server.AccountYadisServlet</servlet-class>
+  </servlet>  
+  
+  <servlet-mapping>
+    <servlet-name>greetServlet</servlet-name>
+    <url-pattern>/ez_sso/greet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>accountServlet</servlet-name>
+    <url-pattern>/account</url-pattern>
+  </servlet-mapping>
+    
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Ez_sso.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
