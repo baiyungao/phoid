@@ -48,7 +48,25 @@
         </exclusion>
       </exclusions>
     </dependency>
+    
+	<!-- Google API -->
+	<dependency>
+      <groupId>com.google.gdata</groupId>
+      <artifactId>gdata-client-1.0</artifactId>
+      <version>1.41.5</version>
+	</dependency>
+	<dependency>
+      <groupId>com.google.gdata</groupId>
+      <artifactId>gdata-core-1.0</artifactId>
+      <version>1.41.5</version>
+	</dependency>  
+	<dependency>
+      <groupId>com.google.gdata</groupId>
+      <artifactId>gdata-docs-3.0</artifactId>
+      <version>1.41.5</version>
+	</dependency>  	
   </dependencies>
+	
   <build>
     <finalName>phoidCommon</finalName>
     <plugins>
